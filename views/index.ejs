@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Testing Server Side Stuff</title>
+    <!-- <link href="stylesheet.css" rel="stylesheet" media="all"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="all" >
+    <link href="https://rawgit.com/liferay/alloy-editor/master/dist/alloy-editor/assets/alloy-editor-ocean-min.css" rel="stylesheet" media="all" >
+    <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+    <style>
+    body {
+        background-color: #333;
+        color: #fff;
+    }
+    .container {
+        background-color: #222;
+        margin-top: 45px;
+        padding: 45px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <form action="/post" method="post"> -->
+            <section id="textText" name="title">
+                <%- data.textText %>
+            </section>
+            <section id="content" name="content">
+                <%- data.textContent %>
+            </section>
+            <input type="submit" id="submit-button" class="btn btn-primary" value="Save" >
+        <!-- </form> -->
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://rawgit.com/liferay/alloy-editor/master/dist/alloy-editor/alloy-editor-all-min.js"></script>
+<script src="custom.js"></script>
+</body>
+</html>
